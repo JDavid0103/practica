@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="Elementos básicos de HTML">
+  <meta name="author" content="José David">
+  <link rel="shortcut icon" href="../src/logo.svg" type="image/svg">
+  <title>Elementos básicos HTML</title>
+</head>
+<body>
+  <header>
+    <a class="header-logo" href="../index.html">
+      <img src="../src/logo.svg" alt="" width="50px" height="50px">
+      <h1>Elementos básicos HTML</h1>
+    </a>
+    <nav class="header-nav">
+      <a href="../index.html">Inicio</a>
+      <a href="./texto.html">Texto</a>
+      <a href="./tabla.html">Tablas</a>
+      <a href="./contenedores.html">Contenedores</a>
+      <a href="./head.html">Encabezado y metadatos</a>
+      <a href="./forms.html" class="selected">Formularios</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Formularios</h2>
+    
+    <h3>&gt; Etiqueta form</h3>
+    <p>En HTML podemos crear formularios, para ello tenemos que usar la etiqueta &lt;form&gt;. Dentro de ella se incluyen los campos y controles que permiten al usuario introducir datos.</p>
+
+    <h3>&gt; Etiqueta label</h3>
+    <p>La etiqueta &lt;label&gt; se utiliza para definir una etiqueta descriptiva de un campo de formulario. Está asociada a un campo mediante el atributo <code>for</code>, que coincide con el <code>id</code> del elemento correspondiente.</p>
+
+    <h3>&gt; Etiqueta input</h3>
+    <p>La etiqueta &lt;input&gt; crea un campo de entrada donde el usuario puede escribir o seleccionar información. Su comportamiento depende del valor del atributo <code>type</code> (por ejemplo: text, email, password, radio, checkbox, file, color, date etc.), ademas es importante ponerle una <code>id</code> para poder recuperar el elemento.</p>
+
+    <h3>&gt; Etiqueta fieldset</h3>
+    <p>La etiqueta &lt;fieldset&gt; agrupa visual y semánticamente varios controles de un formulario. Suele utilizarse para organizar los datos en secciones.</p>
+
+    <h3>&gt; Etiqueta legend</h3>
+    <p>La etiqueta &lt;legend&gt; se usa dentro de un &lt;fieldset&gt; y define un título o leyenda para ese grupo de campos, ayudando a identificar su contenido.</p>
+
+    <h3>&gt; Etiqueta div</h3>
+    <p>La etiqueta &lt;div&gt; sirve para agrupar contenido y aplicar estilos o estructura dentro de un formulario o cualquier parte del documento HTML.</p>
+
+    <h3>&gt; Etiqueta select</h3>
+    <p>La etiqueta &lt;select&gt; permite crear un menú desplegable en el que el usuario puede elegir una opción de una lista predefinida.</p>
+
+    <h3>&gt; Etiqueta option</h3>
+    <p>La etiqueta &lt;option&gt; define cada una de las opciones dentro de un menú desplegable &lt;select&gt;. Cada opción tiene un atributo <code>value</code> que indica el valor que se enviará al formulario.</p>
+
+    <h3>&gt; Etiqueta textarea</h3>
+    <p>La etiqueta &lt;textarea&gt; crea un campo de texto multilínea. Se puede ajustar su tamaño mediante el atributo <code>rows</code>, que define el número de líneas visibles, y se puede mostrar un texto orientativo con el atributo <code>placeholder</code>, por ejemplo:
+    <code>&lt;textarea rows="5" placeholder="Introduzca su opinión"&gt;&lt;/textarea&gt;</code>.
+    </p>
+
+    <h3>&gt; Ejemplo de formulario</h3>
+    <div class="elemento">
+      <div class="codigo"><pre><code>&lt;form action=&quot;&quot;&gt;
+  &lt;label for=&quot;search&quot;&gt;Buscar un campo (no, no funciona)&lt;/label&gt;
+  &lt;input type=&quot;search&quot; id=&quot;search&quot;&gt;
+  &lt;br&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Datos personales&lt;/legend&gt;
+    &lt;label for=&quot;name&quot;&gt;Nombre&lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;name&quot; required&gt;
+    &lt;label for=&quot;surname&quot;&gt;Apellidos&lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;surname&quot; required&gt;
+    &lt;div&gt;
+      &lt;label for=&quot;gender&quot;&gt;Genero&lt;/label&gt;
+      &lt;div&gt;
+        &lt;input type=&quot;radio&quot; id=&quot;no-answer&quot; name=&quot;radio1&quot; checked&gt;
+        &lt;label for=&quot;no-answer&quot;&gt;No contesto&lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        &lt;input type=&quot;radio&quot; id=&quot;man&quot; name=&quot;radio1&quot;&gt;
+        &lt;label for=&quot;man&quot;&gt;Hombre&lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        &lt;input type=&quot;radio&quot; id=&quot;women&quot; name=&quot;radio1&quot;&gt;
+        &lt;label for=&quot;women&quot;&gt;Mujer&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;label for=&quot;date&quot;&gt;Fecha de nacimiento&lt;/label&gt;
+    &lt;input type=&quot;date&quot; id=&quot;date&quot;&gt;
+    &lt;label for=&quot;place&quot;&gt;Lugar de nacimiento&lt;/label&gt;
+    &lt;select id=&quot;place&quot;&gt;
+      &lt;option value=&quot;seville&quot;&gt;Sevilla&lt;/option&gt;
+      &lt;option value=&quot;jaen&quot;&gt;Jaen&lt;/option&gt;
+      &lt;option value=&quot;cordoba&quot;&gt;Cordoba&lt;/option&gt;
+      &lt;option value=&quot;huelva&quot;&gt;Huelva&lt;/option&gt;
+      &lt;option value=&quot;cadiz&quot;&gt;Cadiz&lt;/option&gt;
+      &lt;option value=&quot;malaga&quot;&gt;Malaga&lt;/option&gt;
+      &lt;option value=&quot;granada&quot;&gt;Granada&lt;/option&gt;
+      &lt;option value=&quot;almeria&quot;&gt;Almeria&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;label for=&quot;file&quot;&gt;DNI&lt;/label&gt;
+    &lt;input type=&quot;file&quot; accept=&quot;.pdf&quot; id=&quot;file&quot;&gt;
+    &lt;label for=&quot;email&quot;&gt;Email&lt;/label&gt;
+    &lt;input type=&quot;email&quot; id=&quot;email&quot; required&gt;
+    &lt;label for=&quot;password&quot;&gt;Contraseña&lt;/label&gt;
+    &lt;input type=&quot;password&quot; id=&quot;password&quot; pattern=&quot;[a-zA-Z0-9]{4,12}&quot; required title=&quot;La contraseña tiene que contener letras en minúsculas, mayúsculas y números. Además debe tener entre 4 y 12 caracteres.&quot;&gt;
+  &lt;/fieldset&gt;
+  &lt;br&gt;
+
+  &lt;fieldset&gt;
+    &lt;legend&gt;Preferencias&lt;/legend&gt;
+    &lt;label for=&quot;color&quot;&gt;Elige un color&lt;/label&gt;
+    &lt;input type=&quot;color&quot; id=&quot;color&quot;&gt;
+  &lt;/fieldset&gt;
+  &lt;br&gt;
+
+  &lt;fieldset&gt;
+    &lt;legend&gt;Términos y condiciones&lt;/legend&gt;
+    &lt;div&gt;
+      &lt;input type=&quot;checkbox&quot; id=&quot;terms&quot;&gt;
+      &lt;label for=&quot;terms&quot;&gt;Acepto los términos&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;label for=&quot;parrafo&quot;&gt;Parrafo&lt;/label&gt;
+    &lt;textarea id=&quot;parrafo&quot; rows=&quot;5&quot; placeholder=&quot;Introduzca su opinion&quot;&gt;&lt;/textarea&gt;
+  &lt;/fieldset&gt;
+  &lt;br&gt;
+  &lt;label&gt;Opciones&lt;/label&gt;
+  &lt;div style=&quot;display: flex;&quot;&gt;
+    &lt;input style=&quot;width: 50%;&quot; type=&quot;reset&quot; id=&quot;reset&quot;&gt;
+    &lt;input style=&quot;width: 50%;&quot; type=&quot;submit&quot; value=&quot;Enviar&quot;&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+</code></pre>
+</div>
+      <div class="etiqueta">
+        <form action="">
+          <label for="search">Buscar un campo (no, no funciona)</label>
+          <input type="search" id="search">
+          <br>
+          <fieldset>
+            <legend>Datos personales</legend>
+            <label for="name">Nombre</label>
+            <input type="text" id="name" required>
+            <label for="surname">Apellidos</label>
+            <input type="text" id="surname" required>
+          <div>
+            <label for="gender">Genero</label>
+            <div>
+              <input type="radio" id="no-answer" name="radio1" checked>
+              <label for="no-answer">No contesto</label>
+            </div>
+            <div>
+              <input type="radio" id="man" name="radio1">
+              <label for="man">Hombre</label>
+            </div>
+            <div>
+              <input type="radio" id="women" name="radio1">
+              <label for="women">Mujer</label>
+            </div>
+          </div>
+          <label for="date">Fecha de nacimiento</label>
+          <input type="date" id="date">
+          <label for="place">Lugar de nacimiento</label>
+          <select id="place">
+            <option value="seville">Sevilla</option>
+            <option value="jaen">Jaen</option>
+            <option value="cordoba">Cordoba</option>
+            <option value="huelva">Huelva</option>
+            <option value="cadiz">Cadiz</option>
+            <option value="malaga">Malaga</option>
+            <option value="granada">Granada</option>
+            <option value="almeria">Almeria</option>
+          </select>
+          <label for="file">DNI</label>
+          <input type="file" accept=".pdf" id="file">
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" pattern="[a-zA-Z0-9]{4,12}" required title="La contraseña tiene que contener letras en minúsculas, mayúsculas y números. Además debe tener entre 4 y 12 caracteres.">
+          </fieldset>
+          <br>
+
+          <fieldset>
+            <legend>Preferencias</legend>
+            <label for="color">Elige un color</label>
+            <input type="color" id="color">
+          </fieldset>
+          <br>
+
+          <fieldset>
+            <legend>Términos y condiciones</legend>
+            <div>
+              <input type="checkbox" id="terms">
+              <label for="terms">Acepto los términos</label>
+            </div>
+            <label for="parrafo">Parrafo</label>
+            <textarea id="parrafo" rows="5" placeholder="Introduzca su opinion"></textarea>
+          </fieldset>
+          <br>
+          <label>Opciones</label>
+          <div style="display: flex;">
+            <input style="width: 50%;" type="reset" id="reset">
+            <input style="width: 50%;" type="submit" value="Enviar">
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer">
+      <p>José David Gil - Lenguaje de Marcas - 1.º DAW</p>
+    </div>
+  </footer>
+</body>
+</html>

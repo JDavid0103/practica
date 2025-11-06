@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="Elementos básicos de HTML">
+  <meta name="author" content="José David">
+  <link rel="shortcut icon" href="../src/logo.svg" type="image/svg">
+  <title>Elementos básicos HTML</title>
+</head>
+<body>
+  <header>
+    <a class="header-logo" href="../index.html">
+      <img src="../src/logo.svg" alt="" width="50px" height="50px">
+      <h1>Elementos básicos HTML</h1>
+    </a>
+    <nav class="header-nav">
+      <a href="../index.html">Inicio</a>
+      <a href="./texto.html">Texto</a>
+      <a href="./tabla.html">Tablas</a>
+      <a href="./contenedores.html">Contenedores</a>
+      <a href="./head.html" class="selected">Encabezado y metadatos</a>
+      <a href="./forms.html">Formularios</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Encabezado y metadatos</h2>
+    
+        <div class="elemento"><div class="codigo">
+      <pre><code>&lt;head&gt; 
+  &lt;title&gt;Ejercicio&lt;/title&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=UTF-8&quot;&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;Pagina web de ejercicios&quot;&gt;
+  &lt;meta name=&quot;author&quot; content=&quot;José David&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;meta http-equiv=&quot;refresh&quot; content=&quot;90&quot;&gt;
+  &lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src https:&quot; /&gt;
+  &lt;meta http-equiv=&quot;set-cookie&quot; content=&quot;&quot;&gt;
+&lt;/head&gt;</code></pre>
+    </div></div>
+
+    <h3>&gt; Etiqueta title</h3>
+    <p>La etiqueta &lt;title&gt; define el título del documento HTML. Este texto aparece en la pestaña del navegador, en los resultados de los buscadores y al guardar la página en marcadores. Solo puede haber un &lt;title&gt; por documento.</p>
+
+    <h3>&gt; Meta Content-Type</h3>
+    <p>La etiqueta &lt;meta http-equiv="Content-Type" content="text/html;charset=UTF-8"&gt; indica el tipo de contenido y el conjunto de caracteres que usa la página. En este caso, se especifica que el documento es HTML y usa la codificación UTF-8, que permite mostrar correctamente caracteres especiales como tildes o la letra ñ.</p>
+
+    <h3>&gt; Meta description</h3>
+    <p>La etiqueta &lt;meta name="description" content="..."&gt; proporciona una breve descripción del contenido de la página. Los motores de búsqueda utilizan este texto para mostrar un resumen en los resultados, mejorando el SEO (posicionamiento web).</p>
+
+    <h3>&gt; Meta author</h3>
+    <p>La etiqueta &lt;meta name="author" content="..."&gt; indica el nombre del autor o creador del documento. Es útil para información de créditos o identificación del responsable del sitio.</p>
+
+    <h3>&gt; Meta viewport</h3>
+    <p>La etiqueta &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; se utiliza para adaptar la visualización de la página a diferentes dispositivos (como móviles o tablets). Controla el tamaño y la escala inicial del área visible.</p>
+
+    <h3>&gt; Meta refresh</h3>
+    <p>La etiqueta &lt;meta http-equiv="refresh" content="90"&gt; recarga automáticamente la página cada 90 segundos. Se puede usar también para redirigir a otra URL tras un tiempo determinado, aunque se recomienda usar JavaScript o cabeceras HTTP modernas para ello.</p>
+
+    <h3>&gt; Meta Content-Security-Policy</h3>
+    <p>La etiqueta &lt;meta http-equiv="Content-Security-Policy" content="default-src https:" /&gt; establece una política de seguridad del contenido (CSP) para el navegador. En este caso, limita la carga de recursos solo a fuentes seguras (HTTPS), ayudando a prevenir ataques como la inyección de scripts maliciosos.</p>
+
+    <h3>&gt; Meta set-cookie</h3>
+    <p>La etiqueta &lt;meta http-equiv="set-cookie" content=""&gt; intentaba antiguamente establecer cookies desde el encabezado del documento, pero hoy en día está obsoleta y no es compatible con la mayoría de los navegadores. La gestión de cookies debe hacerse mediante cabeceras HTTP o JavaScript del lado del servidor.</p>
+  </main>
+  <footer>
+    <div class="footer">
+      <p>José David Gil - Lenguaje de Marcas - 1.º DAW</p>
+    </div>
+  </footer>
+</body>
+</html>

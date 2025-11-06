@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="Elementos básicos de HTML">
+  <meta name="author" content="José David">
+  <link rel="shortcut icon" href="../src/logo.svg" type="image/svg">
+  <title>Elementos básicos HTML</title>
+</head>
+<body>
+  <header>
+    <a class="header-logo" href="../index.html">
+      <img src="../src/logo.svg" alt="" width="50px" height="50px">
+      <h1>Elementos básicos HTML</h1>
+    </a>
+    <nav class="header-nav">
+      <a href="../index.html">Inicio</a>
+      <a href="./texto.html">Texto</a>
+      <a href="./tabla.html">Tablas</a>
+      <a href="./contenedores.html" class="selected">Contenedores</a>
+      <a href="./head.html">Encabezado y metadatos</a>
+      <a href="./forms.html">Formularios</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Contenedores</h2>
+
+    <div class="elemento">
+      <div class="codigo">
+        <pre><code>&lt;body&gt;
+  &lt;header&gt;&lt;/header&gt;
+  &lt;main&gt;
+    &lt;div&gt;&lt;/div&gt;
+  &lt;/main&gt;
+  &lt;footer&gt;&lt;/footer&gt;
+&lt;/body&gt;
+</code></pre>
+      </div>
+    </div>
+    
+    <h3>&gt; Etiqueta body</h3>
+    <p>La etiqueta &lt;body&gt; contiene todo el contenido visible de una página web: textos, imágenes, enlaces, formularios, secciones, etc. Solo puede haber un &lt;body&gt; por documento HTML y se muestra dentro de la ventana del navegador.</p>
+
+    <h3>&gt; Etiqueta header</h3>
+    <p>La etiqueta &lt;header&gt; define la cabecera de una página o de una sección. Normalmente contiene el logotipo, el título, el menú de navegación o información introductoria. Puede usarse más de una vez, por ejemplo, dentro de un &lt;article&gt; o &lt;section&gt;.</p>
+
+    <h3>&gt; Etiqueta main</h3>
+    <p>La etiqueta &lt;main&gt; representa el contenido principal de una página. Debe ser única y contener la información más relevante o específica del documento, excluyendo encabezados, menús, barras laterales o pies de página.</p>
+
+    <h3>&gt; Etiqueta footer</h3>
+    <p>La etiqueta &lt;footer&gt; define el pie de página de un documento o sección. Suele incluir información de contacto, derechos de autor, enlaces secundarios o créditos. Puede aparecer tanto al final de la página como en artículos o secciones individuales.</p>
+
+    <h3>&gt; Etiqueta div</h3>
+    <p>La etiqueta &lt;div&gt; es un contenedor genérico que se utiliza para agrupar elementos y aplicarles estilos o comportamientos comunes mediante CSS o JavaScript. No tiene un significado semántico por sí misma.</p>
+  </main>
+  <footer>
+    <div class="footer">
+      <p>José David Gil - Lenguaje de Marcas - 1.º DAW</p>
+    </div>
+  </footer>
+</body>
+</html>

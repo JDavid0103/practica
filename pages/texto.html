@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="Elementos básicos de HTML">
+  <meta name="author" content="José David">
+  <link rel="shortcut icon" href="../src/logo.svg" type="image/svg">
+  <title>Elementos básicos HTML</title>
+</head>
+<body>
+  <header>
+    <a class="header-logo" href="../index.html">
+      <img src="../src/logo.svg" alt="" width="50px" height="50px">
+      <h1>Elementos básicos HTML</h1>
+    </a>
+    <nav class="header-nav">
+      <a href="../index.html">Inicio</a>
+      <a href="./texto.html" class="selected">Texto</a>
+      <a href="./tabla.html">Tablas</a>
+      <a href="./contenedores.html">Contenedores</a>
+      <a href="./head.html">Encabezado y metadatos</a>
+      <a href="./forms.html">Formularios</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Elementos de texto</h2>
+    <h3>> Párrafo</h3>
+    <p>Es uno de los elementos más simples en HTML. Nos permite añadir un párrafo de texto a nuestra web.</p>
+    <div class="elemento">
+      <div class="codigo"><code>&lt;p&gt;texto&lt;/p&gt;</code></div>
+      <div class="etiqueta"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id eros sed tellus tincidunt consectetur ac ac elit. Curabitur ac urna magna. Nunc aliquet dolor sodales ipsum iaculis, sed vulputate ipsum euismod. Pellentesque justo velit, scelerisque in mi fermentum, semper commodo erat. Nunc iaculis mi a nulla aliquam, ac fermentum orci pharetra. Quisque congue dignissim nulla, sagittis vestibulum elit aliquam eu. Etiam sit amet libero id leo feugiat malesuada. Nulla elementum magna ligula, a rutrum arcu ultricies id.</p></div>
+    </div>
+    
+    <h3>> Salto de línea</h3>
+    <p>También es un elemento muy simple, nos permite introducir un salto de línea tanto en un párrafo como en nuestra web. Se usa colocando la etiqueta &lt;br&gt;.</p>
+
+    <h3>> Formato del texto</h3>
+    <p>Las principales etiquetas para dar formato a un texto son las siguientes: &lt;b&gt;, &lt;i&gt; y &lt;u&gt;. Estas etiquetas nos sirven para poner texto en negrita, itálica o subrayado respectivamente. Se usan envolviendo el texto a estilar dentro de ellas como con cualquier otra etiqueta HTML.</p>
+    <div class="elemento">
+      <div class="codigo"><code>&lt;p&gt;Pequeño &lt;b&gt;párrafo de&lt;/b&gt; ejemplo&lt;/p&gt;</code></div>
+      <div class="etiqueta"><p>Pequeño <b>párrafo de</b> ejemplo</p></div>
+    </div>
+    <div class="elemento">
+      <div class="codigo"><code>&lt;p&gt;Pequeño &lt;i&gt;párrafo de&lt;/i&gt; ejemplo&lt;/p&gt;</code></div>
+      <div class="etiqueta"><p>Pequeño <i>párrafo de</i> ejemplo</p></div>
+    </div>
+    <div class="elemento">
+      <div class="codigo"><code>&lt;p&gt;Pequeño &lt;u&gt;párrafo de&lt;/u&gt; ejemplo&lt;/p&gt;</code></div>
+      <div class="etiqueta"><p>Pequeño <u>párrafo de</u> ejemplo</p></div>
+    </div>
+
+    <h3>> Encabezados</h3>
+    <p>Para los encabezados en HTML tenemos distintas etiquetas dependiendo del nivel de encabezado que tengamos.</p>
+    <div class="elemento">
+      <div class="codigo"><code>&lt;h1&gt;Encabezado&lt;/h1&gt;</code></div>
+      <div class="etiqueta"><h1>Encabezado</h1></div>
+    </div>
+    <div class="elemento">
+      <div class="codigo"><code>&lt;h2&gt;Encabezado&lt;/h2&gt;</code></div>
+      <div class="etiqueta"><h2>Encabezado</h2></div>
+    </div>
+    <div class="elemento">
+      <div class="codigo"><code>&lt;h3&gt;Encabezado&lt;/h3&gt;</code></div>
+      <div class="etiqueta"><h3>Encabezado</h3></div>
+    </div>
+    <div class="elemento">
+      <div class="codigo"><code>&lt;h4&gt;Encabezado&lt;/h4&gt;</code></div>
+      <div class="etiqueta"><h4>Encabezado</h4></div>
+    </div>
+    <div class="elemento">
+      <div class="codigo"><code>&lt;h5&gt;Encabezado&lt;/h5&gt;</code></div>
+      <div class="etiqueta"><h5>Encabezado</h5></div>
+    </div>
+    <div class="elemento">
+      <div class="codigo"><code>&lt;h6&gt;Encabezado&lt;/h6&gt;</code></div>
+      <div class="etiqueta"><h6>Encabezado</h6></div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer">
+      <p>José David Gil - Lenguaje de Marcas - 1.º DAW</p>
+    </div>
+  </footer>
+</body>
+</html>

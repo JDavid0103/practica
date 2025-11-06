@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Elementos básicos de HTML">
+  <meta name="author" content="José David">
+  <link rel="shortcut icon" href="src/logo.svg" type="image/svg">
+  <title>Prueba: Elementos básicos HTML</title>
+</head>
+<body>
+  <header>
+    <a class="header-logo" href="index.html">
+      <img src="src/logo.svg" alt="" width="50px" height="50px">
+      <h1>Elementos básicos HTML</h1>
+    </a>
+    <nav class="header-nav">
+      <a href="index.html" class="selected">Inicio</a>
+      <a href="pages/texto.html">Texto</a>
+      <a href="pages/tabla.html">Tablas</a>
+      <a href="pages/contenedores.html">Contenedores</a>
+      <a href="pages/head.html">Encabezado y metadatos</a>
+      <a href="pages/forms.html">Formularios</a>
+    </nav>
+  </header>
+  <main>
+    <h2>¡Bienvenido/a a mi web de elementos básicos de HTML!</h2>
+    <div class="intro-container">
+      <div class="intro">
+        <p>Esta web contiene todas las etiquetas HTML que hemos visto hasta ahora en la asignatura de Lenguajes de Marcas.</p>
+      </div>
+    </div>
+    <h3>> Estructura básica HTML</h3>
+    <p>Aquí muestro un ejemplo de un archivo HTML básico. Como se puede ver, está estructurado por etiquetas. Comenzamos con la etiqueta &lt;html&gt;, la cual envuelve a todos los demás elementos, y dentro de esta tenemos tanto la cabecera del documento &lt;head&gt; como el cuerpo del documento &lt;body&gt;.<br><br>Dentro del &lt;head&gt; tenemos otras etiquetas como las de metadatos &lt;meta&gt;, las cuales se usan para dar un poco de contexto al documento. Existen varias, como las de descripción, autor, viewport...<br>Por otro lado, tenemos el &lt;body&gt; con todos los elementos de nuestra web.</p>
+    <div class="elemento">
+      <div class="codigo"><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Documento HTML&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hola!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div>
+    </div>
+    <h3>> Imágenes</h3>
+    <p>La etiqueta &lt;img&gt; nos permite introducir imágenes desde una URL o ruta a nuestra página web, pasándosela por el atributo "src". Además, tenemos otros atributos que podemos modificar, como la altura ("height") o la anchura ("width"), o incluso agregar una descripción por si la imagen no carga con el atributo "alt".</p>
+    <div class="elemento">
+      <div class="codigo"><code>&lt;img src="https://www.epitech-it.es/wp-content/uploads/2024/02/pexels-pixabay-270404.jpg" height="300px" alt="Imagen de HTML"&gt;</code></div>
+      <div class="etiqueta"><img src="https://www.epitech-it.es/wp-content/uploads/2024/02/pexels-pixabay-270404.jpg" height="300px" alt="Imagen de HTML"></div>
+    </div>
+    <h3>> Video</h3>
+    <p>La etiqueta &lt;video&gt; funciona de manera parecida a la etiqueta de imagen. Nos permite cargar vídeos en nuestra web desde una URL o ruta mediante el atributo "src". También podemos mostrar los controles del reproductor de vídeo con "controls", hacer que el vídeo se reproduzca en bucle con "loop", que se reproduzca automáticamente con "autoplay"... Igualmente, también tenemos los atributos de altura ("height") o anchura ("width") si los necesitamos.</p>
+    <div class="elemento">
+      <div class="codigo"><code>&lt;video src="src/video.mp4" controls&gt;&lt;/video&gt;</code></div>
+      <div class="etiqueta"><video src="src/video.mp4" height="300px" controls></video></div>
+    </div>
+    <h3>> Audio</h3>
+    <p>La etiqueta &lt;audio&gt; funciona exactamente igual que la etiqueta de vídeo. Nos permite cargar audios en nuestra web desde una URL o ruta mediante el atributo "src". También podemos mostrar los controles del reproductor de audio con "controls".</p>
+    <div class="elemento">
+      <div class="codigo"><code>&lt;audio src="src/audio.mp3" controls&gt;&lt;/audio&gt;</code></div>
+      <div class="etiqueta"><audio src="src/audio.mp3" controls></audio></div>
+    </div>
+    <h3>&gt; Lista desordenada</h3>
+    <p>La etiqueta &lt;ul&gt; permite crear listas desordenadas. Cada elemento de la lista se agrega con la etiqueta &lt;li&gt;.</p>
+    <div class="elemento">
+      <div class="codigo"><code>&lt;ul&gt;
+  &lt;li&gt;Elemento 1&lt;/li&gt;
+  &lt;li&gt;Elemento 2&lt;/li&gt;
+  &lt;li&gt;Elemento 3&lt;/li&gt;
+&lt;/ul&gt;</code></div>
+      <div class="etiqueta">
+        <ul>
+          <li>Elemento 1</li>
+          <li>Elemento 2</li>
+          <li>Elemento 3</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>&gt; Lista ordenada</h3>
+    <p>La etiqueta &lt;ol&gt; se utiliza para crear listas ordenadas, es decir, listas numeradas. Igualmente, cada elemento de la lista se agrega con la etiqueta &lt;li&gt;.</p>
+    <div class="elemento">
+      <div class="codigo"><code>&lt;ol&gt;
+  &lt;li&gt;Primer elemento&lt;/li&gt;
+  &lt;li&gt;Segundo elemento&lt;/li&gt;
+  &lt;li&gt;Tercer elemento&lt;/li&gt;
+&lt;/ol&gt;</code></div>
+      <div class="etiqueta">
+        <ol>
+          <li>Primer elemento</li>
+          <li>Segundo elemento</li>
+          <li>Tercer elemento</li>
+        </ol>
+      </div>
+    </div>
+    <h3>&gt; Enlace</h3>
+    <p>La etiqueta &lt;a&gt; se utiliza para crear enlaces a otras páginas o rutas dentro de la misma página. El atributo principal es <code>href</code>, que indica la URL de destino. También se puede usar <code>target="_blank"</code> para abrir el enlace en una nueva pestaña.</p>
+    <div class="elemento">
+      <div class="codigo"><code>&lt;a href="https://www.google.es" target="_blank"&gt;Ir a Google&lt;/a&gt;</code></div>
+      <div class="etiqueta">
+        <a href="https://www.google.es" target="_blank">Ir a Google</a>
+      </div>
+    </div>
+
+    <h3>&gt; Canvas</h3>
+    <p>La etiqueta &lt;canvas&gt; se utiliza para dibujar gráficos mediante JavaScript. Por sí sola, no muestra nada; se necesita código para dibujar dentro de ella.</p>
+    <div class="elemento">
+      <div class="codigo"><code>&lt;canvas id="miCanvas"&gt;&lt;/canvas&gt;</code></div>
+      <div class="etiqueta">
+        <canvas id="miCanvas"></canvas>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <div class="footer">
+      <p>José David Gil - Lenguaje de Marcas - 1.º DAW</p>
+    </div>
+  </footer>
+</body>
+</html>

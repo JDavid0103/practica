@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="Elementos básicos de HTML">
+  <meta name="author" content="José David">
+  <link rel="shortcut icon" href="../src/logo.svg" type="image/svg">
+  <title>Elementos básicos HTML</title>
+</head>
+<body>
+  <header>
+    <a class="header-logo" href="../index.html">
+      <img src="../src/logo.svg" alt="" width="50px" height="50px">
+      <h1>Elementos básicos HTML</h1>
+    </a>
+    <nav class="header-nav">
+      <a href="../index.html">Inicio</a>
+      <a href="./texto.html">Texto</a>
+      <a href="./tabla.html" class="selected">Tablas</a>
+      <a href="./contenedores.html">Contenedores</a>
+      <a href="./head.html">Encabezado y metadatos</a>
+      <a href="./forms.html">Formularios</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Tablas</h2>
+    <h3>> Etiqueta de tabla</h3>
+    <p>En HTML podemos crear tablas de forma sencilla con la etiqueta &lt;table&gt;. La tabla no tiene muchos atributos pero uno importante es el atributo <code>border</code> para añadir borde a la tabla.</p>
+
+    <h3>> Fila de la tabla</h3>
+    <p>Para crear una fila en nuestra tabla, tenemos que usar la etiqueta &lt;tr&gt; y dentro de ella meter las celdas que queramos en esa fila.</p>
+
+    <h3>> Encabezado de la tabla</h3>
+    <p>Una vez en nuestra fila, tendremos que crear el encabezado de la tabla. Para ello, tenemos que usar la etiqueta &lt;th&gt; por cada celda de encabezado que queramos en la primera fila.</p>
+
+    <h3>> Cuerpo de la tabla</h3>
+    <p>Igualmente, para las demás filas tendremos que indicar con la etiqueta &lt;td&gt; cada celda de cuerpo que queramos en nuestra tabla.</p>
+
+    <h3>> Colspan</h3>
+    <p>El atributo <code>colspan</code> se usa en una celda de tabla (&lt;th&gt; o &lt;td&gt;) para que ocupe varias columnas. Por ejemplo, si queremos que una celda abarque 2 columnas, escribimos <code>colspan="2"</code>.</p>
+
+    <h3>> Rowspan</h3>
+    <p>El atributo <code>rowspan</code> se usa en una celda de tabla (&lt;th&gt; o &lt;td&gt;) para que ocupe varias filas. Por ejemplo, si queremos que una celda abarque 3 filas, escribimos <code>rowspan="3"</code>.</p>
+
+    <h3>> Ejemplo de tabla</h3>
+    <p>Aquí dejo un ejemplo completo de tabla.</p>
+    <div class="elemento">
+      <div class="codigo"><code>&lt;table&gt; <br> &nbsp;&nbsp;&lt;tr&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Nombre&lt;/th&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Edad&lt;/th&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;DNI&lt;/th&gt; <br> &nbsp;&nbsp;&lt;/tr&gt; <br> &nbsp;&nbsp;&lt;tr&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Óscar&lt;/td&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;30&lt;/td&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;12345678A&lt;/td&gt; <br> &nbsp;&nbsp;&lt;/tr&gt; <br> &lt;/table&gt;</code></div>
+      <div class="etiqueta">
+        <table border>
+          <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>DNI</th>
+          </tr>
+          <tr>
+            <td>Óscar</td>
+            <td>30</td>
+            <td>12345678A</td>
+          </tr>
+          <tr>
+            <td>Lucas</td>
+            <td>33</td>
+            <td>12345678A</td>
+          </tr>
+          <tr>
+            <td>Sergio</td>
+            <td>24</td>
+            <td>12345678A</td>
+          </tr>
+        </table>  
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer">
+      <p>José David Gil - Lenguaje de Marcas - 1.º DAW</p>
+    </div>
+  </footer>
+</body>
+</html>
